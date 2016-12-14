@@ -1,7 +1,7 @@
 To install django-confirmation, run the following command inside this
 directory:
 
-    python setup.py install
+    setup.py install
 
 You can also just copy the included ``confirmation`` directory somewhere
 on your Python path, or symlink to it from somewhere on your Python path;

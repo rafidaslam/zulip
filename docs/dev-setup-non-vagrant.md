@@ -389,7 +389,7 @@ docker build -t user/zulipdev .
 Commit and tag the provisioned images. The below will install Zulip's dependencies:
 ```
 docker run -itv $(pwd):/srv/zulip -p 9991:9991 user/zulipdev /bin/bash
-$ /usr/bin/python /srv/zulip/tools/provision.py --docker
+$ /srv/zulip/tools/provision.py --docker
 docker ps -af ancestor=user/zulipdev
 docker commit -m "Zulip installed" <container id> user/zulipdev:v2
 ```

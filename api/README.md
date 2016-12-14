@@ -12,7 +12,7 @@ following Python libraries:
 
 This package uses distutils, so you can just run:
 
-    python setup.py install
+    setup.py install
 
 #### Using the API
 
