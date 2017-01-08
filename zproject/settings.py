@@ -776,7 +776,7 @@ JS_SPECS = {
             'third/jquery-filedrop/jquery.filedrop.js',
             'third/jquery-caret/jquery.caret.1.5.2.js',
             'node_modules/xdate/src/xdate.js',
-            'third/jquery-mousewheel/jquery.mousewheel.js',
+            'node_modules/jquery-mousewheel/jquery.mousewheel.js',
             'third/jquery-throttle-debounce/jquery.ba-throttle-debounce.js',
             'third/jquery-idle/jquery.idle.js',
             'node_modules/autosize/dist/autosize.js',
