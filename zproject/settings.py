@@ -779,7 +779,7 @@ JS_SPECS = {
             'third/jquery-mousewheel/jquery.mousewheel.js',
             'third/jquery-throttle-debounce/jquery.ba-throttle-debounce.js',
             'third/jquery-idle/jquery.idle.js',
-            'third/jquery-autosize/jquery.autosize.js',
+            'node_modules/autosize/dist/autosize.js',
             'third/jquery-perfect-scrollbar/js/perfect-scrollbar.js',
             'third/lazyload/lazyload.js',
             'third/spectrum/spectrum.js',

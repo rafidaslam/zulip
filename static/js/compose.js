@@ -1,3 +1,5 @@
+/*global autosize*/
+
 var compose = (function () {
 
 var exports = {};
@@ -44,7 +46,7 @@ function clear_out_file_list(jq_file_list) {
 }
 
 exports.autosize_textarea = function () {
-    $("#new_message_content").trigger("autosize.resize");
+    autosize.update($("#new_message_content"));
 };
 
 // Show the compose box.
@@ -896,7 +898,7 @@ exports.validate = function () {
 };
 
 $(function () {
-    $("#new_message_content").autosize();
+    autosize($("#new_message_content"));
 
     // Run a feature test and decide whether to display
     // the "Attach files" button

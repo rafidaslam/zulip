@@ -1,3 +1,5 @@
+/*global autosize*/
+
 var invite = (function () {
 
 var exports = {};
@@ -48,7 +50,7 @@ exports.initialize = function () {
     $('#submit-invitation').button();
     $('#invite-user').on('show', prepare_form_to_be_shown);
     $('#invite-user').on('shown', function () {
-        invitee_emails.focus().autosize();
+        autosize(invitee_emails.focus());
     });
 
     $("#invite_user_form").ajaxForm({

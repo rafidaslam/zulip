@@ -5,6 +5,7 @@
   "description": "",
   "main": "",
   "dependencies": {
+    "autosize": "3.0.20",
     "handlebars": "1.3.0",
     "i18next": "3.0.0",
     "i18next-parser": "0.11.1",
