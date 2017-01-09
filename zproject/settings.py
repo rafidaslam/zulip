@@ -703,7 +703,7 @@ PIPELINE = {
             'source_filenames': (
                 'third/bootstrap-notify/css/bootstrap-notify.css',
                 'third/spectrum/spectrum.css',
-                'third/jquery-perfect-scrollbar/css/perfect-scrollbar.css',
+                'node_modules/perfect-scrollbar/dist/css/perfect-scrollbar.css',
                 'styles/components.css',
                 'styles/zulip.css',
                 'styles/settings.css',
@@ -780,7 +780,7 @@ JS_SPECS = {
             'third/jquery-throttle-debounce/jquery.ba-throttle-debounce.js',
             'third/jquery-idle/jquery.idle.js',
             'node_modules/autosize/dist/autosize.js',
-            'third/jquery-perfect-scrollbar/js/perfect-scrollbar.js',
+            'node_modules/perfect-scrollbar/dist/js/perfect-scrollbar.jquery.js',
             'third/lazyload/lazyload.js',
             'third/spectrum/spectrum.js',
             'third/sockjs/sockjs-0.3.4.js',

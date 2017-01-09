@@ -222,6 +222,7 @@ exports.resize_page_components = function () {
     $("#user_presences").css('max-height', h.user_presences_max_height);
     $("#group-pms").css('max-height', h.group_pms_max_height);
 
+    $('#stream-filters-container').perfectScrollbar();
     $('#stream-filters-container').perfectScrollbar('update');
 };
 
