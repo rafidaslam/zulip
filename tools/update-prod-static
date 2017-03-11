@@ -46,6 +46,14 @@ subprocess.check_call(['./tools/minify-js'] +
                       (['--prev-deploy', prev_deploy] if prev_deploy else []),
                       stdout=fp, stderr=fp)
 
+subprocess.check_call(['mkdir', '-p', settings.STATIC_ROOT])
+
+CSS_FILES = ['node_modules/perfect-scrollbar/dist/css/perfect-scrollbar.css']
+
+# Copy CSS files in node_modules to prod-static/serve
+for css_file in CSS_FILES:
+    subprocess.check_call(['rsync', '-R', css_file, settings.STATIC_ROOT])
+
 # Collect the files that we're going to serve; this creates prod-static/serve.
 subprocess.check_call(['./manage.py', 'collectstatic', '--no-default-ignore',
                        '--noinput', '-i', 'assets', '-i' 'node_modules'],
